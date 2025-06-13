@@ -17,32 +17,32 @@ sudo ip link set can0 up type can bitrate 250000
 
 Start the ODrive motor controller nodes:
 
-ros2 launch odrive_botwheel_explorer botwheel_explorer.launch.py
+# ros2 launch odrive_botwheel_explorer botwheel_explorer.launch.py
 
 Once all status indicators are green, you can control the robot using keyboard teleoperation:
 
-ros2 run teleop_twist_keyboard teleop_twist_keyboard
+# ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 📷 Step 3: Launch Camera Node
 
 Launch your camera without any URDF model:
 
-ros2 launch odrive_botwheel_explorer camera_as_a_part_of_robot.launch.py
+# ros2 launch odrive_botwheel_explorer camera_as_a_part_of_robot.launch.py
 
 🗺️ Step 4: Launch SLAM (RTAB-Map)
 Option A: SLAM with full robot system
 
-ros2 launch odrive_botwheel_explorer test.launch.py
+# ros2 launch odrive_botwheel_explorer test.launch.py
 
 Option B: RTAB-Map only
 
-ros2 launch odrive_botwheel_explorer rtabmap.launch.py
+# ros2 launch odrive_botwheel_explorer rtabmap.launch.py
 
 🧭 Step 5: Launch Autonomous Navigation (Nav2)
 
 To start the Nav2 stack with a custom parameter file:
 
-ros2 launch nav2_bringup navigation_launch.py params:=/home/ubuntu/odrive_ws/src/odrive_botwheel_explorer/config/nav2_params.yaml
+# ros2 launch nav2_bringup navigation_launch.py params:=/home/ubuntu/odrive_ws/src/odrive_botwheel_explorer/config/nav2_params.yaml
 
     🗺️ Make sure the map server, localization, and controller plugins are properly configured in your nav2_params.yaml.
 
