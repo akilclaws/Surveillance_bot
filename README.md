@@ -15,27 +15,27 @@ sudo ip link set can0 up type can bitrate 250000
 
 Start the motor drivers (ODrive) and bring up the robot controller:
 
-#ros2 launch odrive_botwheel_explorer botwheel_explorer.launch.py
+# ros2 launch odrive_botwheel_explorer botwheel_explorer.launch.py
 
 Once everything is up and indicators are green, you can control the robot using keyboard teleoperation:
 
-#ros2 run teleop_twist_keyboard teleop_twist_keyboard
+# ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 📷 Step 3: Launch Camera Node
 
 Launch camera independently (no URDF required):
 
-#ros2 launch odrive_botwheel_explorer camera_as_a_part_of_robot.launch.py
+# ros2 launch odrive_botwheel_explorer camera_as_a_part_of_robot.launch.py
 
 🧭 Step 4: Launch SLAM (RTAB-Map)
 
 Option 1: Launch SLAM with additional robot setup in rtabmap:
 
-#ros2 launch odrive_botwheel_explorer test.launch.py
+# ros2 launch odrive_botwheel_explorer test.launch.py
 
 Option 2: Launch RTAB-Map only:
 
-#ros2 launch odrive_botwheel_explorer rtabmap.launch.py
+# ros2 launch odrive_botwheel_explorer rtabmap.launch.py
 
 ✅ Tips
 
