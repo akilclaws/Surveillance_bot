@@ -1,5 +1,3 @@
-Here's how you can write your GitHub README.md section using code blocks and proper formatting, ready to copy-paste:
-
 # 🛠️ Jetson Orin Nano Robot Setup (ODrive + CAN + ROS 2 + RTAB-Map)
 
 This repository contains launch files and configurations for a four-wheel differential drive robot using ODrive over CAN, running on a Jetson Orin Nano.
